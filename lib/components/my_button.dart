@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  final void Function()? ontap;
+  final void Function()? onTap;
   final String text;
 
   const MyButton({
     super.key,
     required this.text,
-    required this.ontap
+    required this.onTap
 
     });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ontap,
+      onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.secondary,
